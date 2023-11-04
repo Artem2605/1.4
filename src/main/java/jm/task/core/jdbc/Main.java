@@ -20,10 +20,9 @@ public class Main {
         user.saveUser("Vasya", "Romanov", (byte) 22);
         user.saveUser("Lena", "Leonova", (byte) 24);
 
+        user.removeUserById(2);
+
         List<User> list = user.getAllUsers();
-        for (User el: list) {
-            System.out.println(el.toString());
-        }
 
         user.cleanUsersTable();
 
